@@ -1,0 +1,81 @@
+
+@font-face {
+    font-family: Poppins;
+    src: url(ASSETS/FONT/Poppins-Bold.ttf);
+}
+.grid1{
+    display: grid;
+    place-items: center;
+}
+
+.grid2{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(8,100px);
+    grid-template-rows:repeat(auto-fit, minmax(100px, 1fr)) ;
+    overflow-x: hidden;
+}
+.g2-item1{
+    grid-area: 2 / 4 / 4/ 6 ;
+}
+
+.grid3{
+    display: grid;
+    place-items: center;
+}
+
+.grid4{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(5,100px);
+    grid-template-rows:repeat(auto-fit, minmax(100px, 1fr)) ;
+    overflow-x: hidden;
+}
+
+.g4-item1{
+    grid-area: 1 / 2 / 2/ 2 ;
+}
+.g4-item2{
+    grid-area: 1 / 4 / 2/ 4 ;
+}
+
+
+body{
+    background-color: #FF947D;
+    font-family: Poppins;
+    color: #6F0319;
+    font-size: 18px;
+}
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-family: Poppins;
+    border-radius: 15px;
+}
+#yesButton {
+    background-color: #FF947D;
+    border: solid 3px #6F0319;
+    color: #6F0319;
+}
+#noButton {
+    background-color: #FF947D;
+    border: solid 3px #6F0319;
+    color: #6F0319;
+}
+#igif{
+    height:300px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+#change{
+    letter-spacing: 0.5px;
+}
+

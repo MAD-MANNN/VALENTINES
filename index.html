@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VALENTINES</title>
+</head>
+<body>
+    <section class="grid1">
+         <div class="g1-item1"><h1>HEY VALENTINES IS NEAR</h1></div>
+    </section>
+
+    <section class="grid2">
+        <div class="g2-item1"><img  id="igif" src="ASSETS/IMAGES/GIFS/lolaquack.gif" ></div>
+        <!-- <div class="g2-item2"><img id="" src="" alt=""></div> -->
+    </section>
+
+    <section class="grid3">
+        <div class="g3-item1"><p id="change">WILL YOU BE MY VALENTINE ATE JAM?</p></div>
+    </section>
+    
+    <section class="grid4">
+        <div class="g4-item1"><button id="yesButton">Yes</button></div>
+        <div class="g4-item2"><button id="noButton">No</button></div>
+    </section>
+    
+  
+    
+    
+
+    <script>
+
+
+       
+         
+        let yesButton = document.getElementById("yesButton");
+        let changepos = document.getElementsByClassName("g4-item1");
+        let noButton = document.getElementById("noButton");
+        let size = 16; // Initial font size for "Yes"
+        let opacity = 1.0; // Initial opacity for "No"
+        
+        noButton.onclick = function() {
+            
+            size += 20; // Increase font size of "Yes" button by 10px
+            yesButton.style.fontSize = size + "px"; 
+
+            
+            opacity -= 0.5; // Reduce opacity of "No" button
+            noButton.style.opacity = opacity;
+
+            if (opacity <= 0) {
+                noButton.style.display = "none"; // Hide "No" button when fully faded
+              
+        
+                
+            }
+            
+        };
+        yesButton.onclick = function(){
+            let img = document.getElementById("igif");
+            document.getElementById("change").innerHTML = "SWEET I LOVE YOU, SEE YOU AT FEBRUARY 14";
+
+            img.src = "ASSETS/IMAGES/GIFS/lolaquack2.gif";
+           
+            
+            // document.getElementById("igif").src = "ASSETS\IMAGES\GIFS\lolaquack2.gif"
+            
+        }
+    </script>
+
+</body>
+</html>
